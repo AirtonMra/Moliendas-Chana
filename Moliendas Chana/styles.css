@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+
+header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    /*background-color: rgba(0, 0, 0, 0.6); /* Slight background for better contrast */
+    /*backdrop-filter: blur(5px); /* Adds a blur effect */
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+header.hide-header {
+    transform: translateY(-200%);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin: 20px;
+    margin-right: 20px;
+    height: 80px;
+}
+
+nav a {
+    text-shadow: 1px 1px 2px black;
+    margin-right: 12px;
+    font-size: 25px;
+    font-weight: 900;
+    padding-right: 10px;
+    position: relative;
+    transition: all 0.5s ease; /* Smoother animation */
+}
+
+nav a:hover {
+    font-size: 28px;
+    filter: brightness(1.75);
+
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+    .contact {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+}
+
+.contact {
+    height: 50vh;
+    width: 100%;
+    filter: brightness(80%) saturate(120%) hue-rotate(-10deg); /* Makes the image more bluish */
+    background-image: url('http://moliendaschana.com/wp-content/uploads/2021/11/FOTO-PORTADA-APLICACIONES.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0.9; /* Reduces opacity for better contrast */
+}
+.text {
+    color: rgb(255, 255, 255);
+    max-width: 800px;
+}
+
+.text h1 {
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    font-weight: 900;
+    font-size: 5rem;
+    margin: 0 0 20px 0;
+}
+
+.text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.section {
+    background: #f7f7f7;
+background: linear-gradient(21deg, rgba(247, 247, 247, 1) 65%, rgba(233, 233, 233, 1) 82%, rgba(235, 235, 235, 1) 95%);
+    padding: 80px 0;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.section-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    width: 100%;
+    max-width: 280px;
+    transition: all 0.5s ease;
+}
+
+.section-card span {
+    display: block;
+    background-color: #ffa51e;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    margin: 0 auto 15px;
+}
+
+.section-card h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.section-card p {
+    font-weight: 600;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.section-card a {
+    display: inline-block;
+    text-transform: capitalize;
+    background-color: #5a8a88;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+.section-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 4px black;
+    cursor: pointer;
+}
+
+.section-card:hover p {
+    font-weight: 700 ;
+    color: #333333;
+}
+@media (max-width: 768px) {
+    .section-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .section-card {
+        max-width: 90%;
+    }
+}
+.informacion {
+    padding: 10px;
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.informacion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.highlight{
+    background-color: #ffa51e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.informacion img{
+    height: 500px;
+    width: 800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 3px 4px 3px rgba(0, 0, 0, 0.3);
+}
+.informacion p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.informacion h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 25px;
+}
+
+.informacion h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+.politicas {
+    background: #ffffff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 14%, rgba(212, 212, 212, 1) 100%);
+    text-align: center;
+}
+
+.politicas h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.politicas p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.section2 {
+    padding: 80px 0;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.section-cards2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.section-card2 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    width: 100%;
+    max-width: 280px;
+}
+
+.section-card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.section-card2 h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+    transition: color 0.4s ease;
+}
+
+.section-card2:hover h2 {
+    color: #ffa51e;
+}
+
+.section-card2 p {
+    font-weight: 600;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    transition: color 0.4s ease;
+}
+
+.section-card2:hover p {
+    color: #333333;
+}
+
+.section-card3 {
+    margin-top: 40px;
+    display: flex;
+    top: 50%;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    max-width: 480px;
+    transition: all 0.5s ease;
+}
+
+.section-card3 h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.section-card3 p {
+    font-weight: 600;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .section-cards2 {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .section-card2 {
+        max-width: 90%;
+    }
+}
+
+
+.ayuda {
+    text-align: center;
+    padding: 60px 30px;
+    background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ayuda h1 {
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ayuda button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 12px 25px;
+    font-size: 20px;
+    background: linear-gradient(135deg, #ffa51e, #ff8c00);
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ayuda button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    filter: brightness(1.1);
+}
+
+
+
+.footer {
+    background-color: #333; /* Color base oscuro */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffa51e;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-section a:hover {
+    color: #ffa51e;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem; /* Increase the size of the icons */
+}
