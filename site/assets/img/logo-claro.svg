@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 44" width="190" height="44" role="img" aria-label="Moliendas Chaná">
+  <!-- Logotipo provisorio: reemplazar por el logotipo original (LOGO-MOLIENDAS-CHANA) -->
+  <circle cx="22" cy="22" r="19" fill="#5b3d26"/>
+  <circle cx="22" cy="22" r="12" fill="none" stroke="#cdb98f" stroke-width="2.5"/>
+  <path d="M22 10v24" stroke="#cdb98f" stroke-width="2.5"/>
+  <path d="M12 22c5-6 15-6 20 0" fill="none" stroke="#9cc88b" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="50" y="20" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#faf8f3">Moliendas</text>
+  <text x="50" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#9cc88b">Chaná</text>
+</svg>
