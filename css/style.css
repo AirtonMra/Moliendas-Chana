@@ -54,7 +54,20 @@ h3
     font-size:clamp(1.3rem,2.2vw,1.8rem);
     letter-spacing:-.01em
 }
-.wrap{width:min(1280px,92vw);margin:auto}.dark{background:var(--g);color:var(--w)}.earth{background:var(--w2)}
+.wrap
+{
+    width:min(1280px,92vw);
+    margin:auto
+}
+.dark
+{
+    background:var(--g);
+    color:var(--w)
+}
+.earth
+{
+    background:var(--w2)
+}
 section{padding:clamp(4.5rem,10vw,9rem) 0;position:relative}
 p{max-width:62ch}.muted{opacity:.72}.tag{font:500 .8rem/1 "Hanken Grotesk";letter-spacing:.06em;color:var(--v);display:inline-block;margin-bottom:1.2rem}
 .dark .tag{color:var(--v2)}

@@ -1,4 +1,4 @@
-
+// Script
 (()=>{
     const d=document,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
 
